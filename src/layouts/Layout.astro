@@ -1,3 +1,9 @@
+---
+import pcImage from '../assets/image-pc.png';
+import spImage from '../assets/image-sp.png';
+
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -22,8 +28,8 @@
 				<div class="image">
 					<div class="image-inner">
 						<picture>
-							<source srcset="/assets/image-sp.png" media="(max-width: 768px)">
-							<img src="/assets/image-pc.png" alt="Candle and Pine Branches with Snowflakes">
+							<source srcset={spImage.src} width={spImage.width} height={spImage.width} media="(max-width: 768px)">
+							<img src={pcImage.src} width={pcImage.width} height={pcImage.height} alt="Candle and Pine Branches with Snowflakes">
 						</picture>
 					</div>
 				</div>
